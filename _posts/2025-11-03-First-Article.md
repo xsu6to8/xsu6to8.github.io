@@ -29,5 +29,3 @@ toc_sticky: true # 스크롤 따라다니는 목차
 
 드디어 `minimal-mistakes` 블로그에 첫 글을 작성합니다.
 
-
-}
