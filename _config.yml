@@ -60,7 +60,7 @@ plugins:
 author:
   name   : "XSU"
   avatar : "/assets/images/xsu.png"
-  bio    : "HeLlO wOrLd"
+  bio    : "xsu's blog"
   links:
     - label: "Website"
       icon: "fas fa-fw fa-link"
