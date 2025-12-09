@@ -1,10 +1,11 @@
-``` mermaid
+```mermaid
 usecaseDiagram
-    actor "고객 (Customer)" as C
-    actor "관리자 (Admin)" as A
-    actor "인쇄 에이전트 (Print Agent)" as PA
-    actor "카드사 시스템 (Card System)" as CS
-    actor "공급업체 (Supplier)" as S
+    %% 액터 정의 (ID as "표시 이름")
+    actor C as "고객 (Customer)"
+    actor A as "관리자 (Admin)"
+    actor PA as "인쇄 에이전트 (Print Agent)"
+    actor CS as "카드사 시스템 (Card System)"
+    actor S as "공급업체 (Supplier)"
 
     package "주문형 인쇄 서비스 (Print-on-Demand Service)" {
         usecase "계정 생성" as UC1
@@ -21,7 +22,7 @@ usecaseDiagram
     C --> UC2
 
     %% 주문하기의 포함 관계 (Include)
-    %% 주문 시 정보 확인과 결제는 필수적으로 일어남
+    %% 주문 시 정보 확인과 결제는 필수적으로 포함됨
     UC2 ..> UC3 : <<include>>
     UC2 ..> UC4 : <<include>>
 
@@ -37,5 +38,4 @@ usecaseDiagram
 
     %% 관리자와 공급업체 상호작용
     UC7 -- S : 발주
-
 ```
