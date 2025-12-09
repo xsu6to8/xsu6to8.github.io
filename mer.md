@@ -1,4 +1,4 @@
-''' mermaid
+``` mermaid
 usecaseDiagram
     actor "고객 (Customer)" as C
     actor "관리자 (Admin)" as A
@@ -38,4 +38,4 @@ usecaseDiagram
     %% 관리자와 공급업체 상호작용
     UC7 -- S : 발주
 
-'''
+```
