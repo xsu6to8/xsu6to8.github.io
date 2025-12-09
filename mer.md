@@ -16,7 +16,6 @@ usecaseDiagram
         usecase "자재 주문" as UC7
     }
 
-    %% 관계 정의
     C --> UC1
     C --> UC2
     UC2 ..> UC3 : <<include>>
@@ -26,3 +25,4 @@ usecaseDiagram
     A --> UC6
     A --> UC7 : 재고 부족 시
     UC7 -- S : 발주
+```
